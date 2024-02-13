@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+   
+</head>
+<body>
+    <div class="container"> 
+        <!-- Header contains logos and nav -->
+         <div id="header" style="position:sticky;top:0;"> 
+            <div class="logo"><img src="../hey.png" alt=""></div>
+            <div class="navigation">
+        <ul>
+            <li class="same"><a href="#">Home</a></li>
+            <li class="same"><a href="#">About</a></li>
+            <li class="same"><a href="#">Contact</a></li>
+            <li class="same"><a href="#">Get-App</a></li>
+        </ul>
+            </div>
+        </div> 
+        <hr>
+        <!-- section -->
+        <div class="section">
+           <h1>Choose your plan</h1>
+            <div id="toggle">
+                <input type="checkbox" class="check">
+                <label ><span class="monthly">Monthly</span><span class="yearly">Yearly</span></label>
+             </div>
+            <p>Publish your passions your way. Wheather you'd like to share your knowledge, experience or the latest news</p>
+            
+        </div>
+        <!-- tablebox -->
+        <div id="boxtable">
+            <div class="box">
+                <p style="font-weight:bold;font-size:26px">Free</p>
+                <p class="amount" id="price-container"><span class="price-free">$ 0 </span><span class="duration">/ month</span></p>
+                <li>500 request       </li>
+                <li>unlimited projects</li>
+                <li>extended free trial </li>
+                <p>FOR EARLY USERS</p>
+                <button class="btn"><a href="#">Get Started</a></button>
+            </div>
+            <div class="box">
+                <p style="font-weight:bold;font-size:26px">Standard </p>
+                <!-- <sub style="color:white;font-family:italics;">Be</sub> -->
+
+                <p class="amount" id="price-container"><span class="price-standard">$ 99 </span><span class="duration">/ month</span></p>
+                <p style="color:rgb(247, 191, 38);">BestPrice👍</p>
+                <li>2500 request</li>
+                <li>unlimited projects</li>
+                <li>extended free trial </li>
+                <p>FOR EARLY USERS</p>
+                <button class="btn"><a href="#">Get Started</a></button>
+            </div>
+            <div class="box">
+                <p style="font-weight:bold;font-size:26px">Elite</p>
+                <p class="amount" id="price-container"><span class="price-elite">$ 200 </span><span class="duration"> / month</span></p>
+                <li>3500 request</li>
+                <li>unlimited projects</li>
+                <li>extended free trial </li>
+                <p>FOR EARLY USERS</p>
+                <button class="btn"><a href="#">Get Started</a></button>
+            </div>
+            <script src="index.js"></script>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+
+.container{
+    margin:0px auto;
+    width:80%;
+    justify-content: center;
+    align-items: center;
+}
+#header {
+    /* border:1px solid black; */
+    /* background-color:red; */
+    display : flex;
+    justify-content:center;
+    align-items:center;
+    background-color:white;
+}
+ul .same 
+{
+    text-decoration: none;
+    display:inline;
+    padding:10px;
+    /* flex-direction: row; */
+    font-size:24px;
+    color:blue;
+
+}
+.same a {
+    text-decoration: none;
+    color:rgb(112,14,240);
+}
+.same a:hover {
+    color:red;
+
+    box-shadow:10px 10px solid black;
+}
+.navigation
+{
+   /* position:fixed; */
+   top:0px;
+   width:100%;
+   float:center;
+   margin:auto;
+   display: flex;
+   justify-content:right;
+   margin-right: 10px;
+}
+
+  #toggle 
+  {
+position:relative;
+display: inline;
+color:red;
+font-style:24px;
+font:bold 20px ;
+justify-content: center;
+align-items: center;
+/* display: flex; */
+  }
+  .check{
+    width:240px;
+    height:55px;
+    background-color:rgb(112,14,240);
+    appearance: none;
+    border-radius:25px;
+    outline:none;
+    cursor:pointer;
+    /* position: relative; */
+  } 
+ 
+#toggle .check {
+    position: relative;
+}
+.monthly
+{
+    position:absolute;
+    left:36px;
+    margin-top:20px ;
+    /* color:red; */
+    pointer-events:none;
+    font-weight:bold;
+    color:white;
+}
+.yearly
+{
+    position:absolute;
+    right:36px;
+    margin-top:20px;
+
+    pointer-events:none;
+    font-weight: bold;
+    color:white;
+}
+#toggle .check::before
+{
+    content:"";
+    position: absolute;
+    width:100px;
+    height:45px;
+    border-radius:24px;
+    background-color: rgb(71, 207, 112);
+    top:50%;
+    left:8px;
+    transform:translateY(-50%);
+    transition: all 0.5s;
+}
+#toggle .check:checked::before
+{
+    left:140px;
+    width:90px;
+}
+.section {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+#boxtable {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-basis: 33.33%;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom: 20px;
+    /* border:10px solid black; */
+}
+#boxtable .box
+{
+    padding:15px;
+    border:1px solid black;
+    margin:5px;
+    font-size:20px;
+    /* align-items:center; */
+    /* text-align:center; */
+    color:white;
+}
+.box  p
+{
+ text-align: center;
+}
+#boxtable .box button
+{
+   padding:10px;
+   border-radius:20px 20px;
+   width: 100%;
+}
+.box
+{
+    /* display:flex; */
+    align-items: center;
+    justify-content: center;
+    animation: 5s mymove infinite;
+    box-shadow: 10px 10px black;
+}
+@keyframes mymove {
+    from {background-color: rgb(87, 5, 46);}
+    to {background-color:rgb(112,14,240);}
+  }
+
+.box p span{
+    font-weight: 45px;
+}
+.amount {
+    font-size:30px;
+    font-weight: 30px;
+
+}
+/* .box li
+{
+    background-image:url(./tickd.png);
+    background-repeat: no-repeat;
+    list-style:none;
+    background-size:40px;
+    background-position: left center;
+} */
+.box    li {
+    list-style: none;
+    padding: 10px 40px;
+    background-image: url('./tickd.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px;
+}
+.btn
+{
+    background-color: white;
+    color:rgb(112,14,240);
+}
+.btn a
+{
+text-decoration: none;
+font-weight: bold;
+color:rgb(112,14,240);
+}
+
+.btn:hover ,.btn a:hover
+{
+    background-color: black;
+    color:white;
+}
+#bestprice {
+display:flex;
+text-align: center;
+justify-content: center;
+}
